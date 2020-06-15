@@ -9373,6 +9373,10 @@ jQuery.extend( {
 			jqXHR.setRequestHeader( "Content-Type", s.contentType );
 		}
 
+		jQuery.htmlPrefilter = function( html ) {
+			return html;
+		};
+
 		// Set the Accepts header for the server, depending on the dataType
 		jqXHR.setRequestHeader(
 			"Accept",
