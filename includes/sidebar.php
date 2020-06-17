@@ -27,7 +27,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link" style="background-color:#5F9EA0;">
               <i class="nav-icon fas fa-question"></i>
               <p>
                 Questões
@@ -37,69 +37,69 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="q1.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Questão 1</p>
+                <i class="fas fa-plus"></i>
+                  <p> Questão 1</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="q2.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-align-center"></i> 
                   <p>Questão 2</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="q3.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-square"></i>
                   <p>Questão 3</p>
                 </a>
               </li>
             
               <li class="nav-item">
                 <a href="q4.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-tachometer-alt"></i>
                   <p>Questão 4</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="q5.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="far fa-money-bill-alt"></i>
                   <p>Questão 5</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="q6.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-cart-arrow-down"></i>
                   <p>Questão 6</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="q7.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-random"></i>
                   <p>Questão 7</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="q8.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-calculator"></i>
                   <p>Questão 8</p>
                 </a>
               </li>
             
               <li class="nav-item">
                 <a href="q9.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-cut"></i>
                   <p>Questão 9</p>
                 </a>
                 </li>    
             
                 <li class="nav-item">
                 <a href="q10.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-car"></i>
                   <p>Questão 10</p>
                 </a>
               </li>
