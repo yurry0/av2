@@ -45,29 +45,61 @@
 
 
   <!-- Content Wrapper. Contains page content -->
+
+<?php
+
+
+
+
+?>
+
+
       <div class="content-wrapper">
       <div class="container-fluid">
       
       
-      <h4 style="text-align: center; padding:50px  "> 4. Escreva um algoritmo que leia a velocidade de um objeto em m/s (metros por segundo), calcule e
-exiba para o usuário a velocidade em km/h.
+      <h4 style="text-align: center; padding:50px "> 5. Salário atual desse funcionário.
       </h4> 
       
 
-      <div class="col-lg-3 col-6">
+      <div class="col-lg-3 col-5" style="margin-left: 40rem;">
             <!-- small card -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
+                <h3>Funcionário!</h3>
 
-                <p>User Registrations</p>
+                <p>João Joaquim Joãonácio da Silva II</p>
+                <br> <?php    
+                
+                $salario_original = 1000;
+                $ano_inicial = 2015;
+                $taxa_aumento = 1.5;
+                $aumento_next = 2;
+
+                function calc_salario($salario_original, $taxa_aumento,$aumento_next){
+
+                  $salario_2016 = $salario_original + ($salario_original * $taxa_aumento)/100;
+                  echo $salario_2016;
+                  $salario_2017 = $salario_2016 + ($salario_2016 * $aumento_next/100);
+                  $salario_2018 = $salario_2017 + ($salario_2017 * ($aumento_next*2)/100);
+                  $salario_2019 = $salario_2018 + ($salario_2018 * ($aumento_next*2*2)/100);
+                  $salario_2020 = $salario_2019 + ($salario_2019 * ($aumento_next*2*2*2)/100);
+                  
+                  return number_format($salario_2020,2) ;
+
+                }
+
+                  echo "<p> Salário Atual: R$".calc_salario($salario_original,$taxa_aumento,$aumento_next)
+
+
+
+                
+                
+                ?> 
               </div>
               <div class="icon">
                 <i class="fas fa-user-plus"></i>
               </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
             </div>
           </div>
 
