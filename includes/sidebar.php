@@ -36,69 +36,69 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
+                <a href="q1.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q2.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 2</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q3.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 3</p>
                 </a>
               </li>
             
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q4.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 4</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q4.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 5</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q6.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 6</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q7.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 7</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q8.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 8</p>
                 </a>
               </li>
             
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="q9.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 9</p>
                 </a>
                 </li>    
             
                 <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
+                <a href="q10.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 10</p>
                 </a>
