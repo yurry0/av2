@@ -58,43 +58,51 @@ cada um dos números
       <!-- Horizontal Form -->
       <div class="card card-info">
               <div class="card-header">
-                <h3 class="card-title">Horizontal Form</h3>
+                <h3 class="card-title"> <i class="fas fa-sun"></i> Cálculo!</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
               <form class="form-horizontal">
                 <div class="card-body">
                   <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <label for="numero1" class="col-sm-2 col-form-label">Primeiro Numero</label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                      <input type="number" class="form-control" id="numero1" name="numero1" placeholder="Digite aqui o primeiro valor">
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <label for="segundonumero" class="col-sm-2 col-form-label">Segundo Número</label>
                     <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      <input type="number" class="form-control" id="numero2" name="numero2" placeholder="Digite aqui o segundo valor">
                     </div>
                   </div>
-                  <div class="form-group row">
-                    <div class="offset-sm-2 col-sm-10">
-                    <input type="radio" id="adicao" name="adicao" value="adicao">
-                    <label for="male">Adição</label><br>
-                    <input type="radio" id="sub" name="sub" value="subtracao">
-                    <label for="">Subtração</label><br>
-                    <input type="radio" id="multi" name="multi" value="multi">
-                    <label for="divisao">Multiplicação</label>
-                    <input type="radio" id="divi" name="divi" value="divi">
-                    <label for="divisao">Divisão</label>
-                    
+                  <div class="form-group">
+                        <div class="form-check">
+                          <input type="radio" name="button" id = 'add'>
+                          <label class="form-check-label"> <i class="fas fa-plus"></i> Adição</label>
+                          <input type="radio" name="button" id = 'minus'>
+                          <label class="form-check-label"> <i class="fas fa-minus"></i> Subtração</label>
+                          <input type="radio" name="button" id = 'multi'>
+                          <label class="form-check-label"> <i class="fas fa-times"> </i> Multiplicação</label>
+                          <input type="radio" name="button" id = 'divi'>
+                          <label class="form-check-label"> <i class="fas fa-divide"></i> Divisão </label>
+                        </div>
+                        
+
+  
+
+                      </div>
                     </div>
+                    <div class="card-footer">
+                  <button type="button" nome="calcular" value="calcular" class="btn btn-info" onclick="calcular()" style="float:right">Calcular</button>
+                </div>
                   </div>
                 </div>
+
+                <h2 style="text-align: center;" id="resultado"> </h2>
+               
                 <!-- /.card-body -->
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-info">Sign in</button>
-                  <button type="submit" class="btn btn-default float-right">Cancel</button>
-                </div>
+                
                 <!-- /.card-footer -->
               </form>
             </div>
@@ -102,6 +110,54 @@ cada um dos números
 
           </div>
 
+          <script>
+              function calcular(){
+
+                var n1 = parseInt(document.getElementById('numero1').value);
+                var n2 = parseInt(document.getElementById('numero2').value);
+
+                var caixaresultado = document.getElementById('resultado');
+                caixaresultado.innerHTML = "";
+
+                var fazerAdd = document.getElementById('add');
+                var fazerSub = document.getElementById('minus');
+                var fazerMulti = document.getElementById('multi');
+                var fazerDivi = document.getElementById('divi');
+
+
+                if(fazerAdd.checked == true){
+
+                  caixaresultado.innerHTML = n1 + n2;
+
+                }
+                else{
+                  if(fazerSub.checked == true){
+
+                    caixaresultado.innerHTML = n1-n2;
+                  }
+                  else{
+
+                    if(fazerMulti.checked == true){
+
+                      caixaresultado.innerHTML = n1*n2;
+                    }
+
+                    else{
+                      if(fazerDivi.checked == true){
+
+                        caixaresultado.innerHTML = n1/n2;
+                      }
+                    }
+                  }
+
+                }
+
+
+              }
+
+
+
+          </script>
 
 
 
