@@ -1,22 +1,16 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="style/css" href="css/cover.css">
-<style> 
 
-img {
-  opacity: 0.75;
-}
-
-
+<style>
+h1{text-shadow: 1px 1px cyan;};
 
 </style>
 
-
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Atividade AV2 - Yuri</title>
+  <title>AdminLTE 3 | Fixed Navbar Layout</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -28,51 +22,87 @@ img {
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition sidebar-mini layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-sidebar-fixed">
 <!-- Site wrapper -->
 <div class="wrapper">
-
-    <?php
-    //include "includes/navpar.php";
-    ?>
-
-   
-  </nav>
-  
-  <!-- /.navbar -->
-
-  <!-- sidebar -->
-
-    <?php
-
-    include "includes/sidebar.php"
-
-
-    ?>
-
-
-
-
+ 
+  <?php include "includes/sidebar.php"?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-7">
+            <h1 style="text-align: center; margin-left:42rem">Homepage</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
 
-  <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
-      </main>
-    
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+          <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"> <i class="fas fa-frog"></i>  Atividade AV2 - Yuri Martins</h1>
+    <p class="lead">A barra lateral contém links para as questões da atividade.</p>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="col-sm-6" style="margin-left: 480px;">
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="https://placehold.it/900x500/39CCCC/ffffff&text=Várias+Questões+Respondidas" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://placehold.it/900x500/3c8dbc/ffffff&text=Utilizando+Várias+Linguagens" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://placehold.it/900x500/f39c12/ffffff&text=HTTP+CSS+JavaScript+PHP" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <!-- END ACCORDION & CAROUSEL-->
 
 
- <?php 
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
-    include "includes/footer.php"
-
- ?>
-
+  <?php include "includes/footer.php";
+  ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -81,10 +111,6 @@ img {
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
-
-
-
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
