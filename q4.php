@@ -3,9 +3,6 @@
 <head>
 <link rel="stylesheet" type="style/css" href="css/cover.css">
 
-
-
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Atividade AV2 - Yuri</title>
@@ -51,60 +48,43 @@
       <div class="content-wrapper">
       <div class="container-fluid">
       
-    <?php 
-    include "includes/content_header.php";
-    ?>
       
-    <h1>Resultado! <br></h1>
-  <br>
-  <br>
- 
-    <div class="row">
+      <h4 style="text-align: center; padding:50px  "> 4. Escreva um algoritmo que leia a velocidade de um objeto em m/s (metros por segundo), calcule e
+exiba para o usuário a velocidade em km/h.
+      </h4> 
       
-          <div class="col-md-6"  style="padding-left: 15px;">
-            <div class="card" >
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-check-circle"></i>
-                  Resultado da Operação
-                </h3>
+
+      <div class="card card-primary">
+              <div class="card-header" >
+                <h3 class="card-title">Velocidade</h3>
               </div>
               <!-- /.card-header -->
-              <div class="card-body" >
-              
-              <?php
+              <!-- form start -->
+              <form role="form" name="form_media" method="POST" action="q4resp.php">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="metros">Quantidade de Metros</label>
+                    <input type="number" class="form-control" id="metro" required name="metro" placeholder="Digite aqui a quantidade de metros">
+                  </div>
+                  <div class="form-group">
+                    <label for="segundo">Quantidade de Segundos</label>
+                    <input type="number" class="form-control" id="segundo" name="segundo" required placeholder="Digite aqui a quantidade de segundos">
+                  </div>
+                <!-- /.card-body -->
 
-            $valor1 = $_POST['sq1'];
-            $valor2 = $_POST['sq2'];
-
-
-            function calc_square($number1,$number2){
-
-            $square1 = $number1 * $number1;
-            $square2 = $number2 * $number2;
-
-            $soma_square = $square1 + $square2;
-            
-            return $soma_square;
-            
-          }
-
-            echo "<blockquote> <h1> A soma do dobro do valor ".$valor1." , e do dobro do valor ".$valor2." é: ".calc_square($valor1,$valor2);
-
-
-            ?>
-
-              </div>
-              <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" style="float: right;" class="btn btn-info">Calcular Velocidade</button>
+                </div>
+              </form>
             </div>
-            <!-- /.card -->
-          </div>
-          <!-- ./col -->
-        </div>
-        <!-- /.row -->
-      
-              </div>
+            <!-- /.card -->  
 
+    </div>
+    <!-- /.card -->
+
+  <?php 
+  
+  ?>
       </div>
       </div>
       </div>
@@ -137,6 +117,3 @@
 <script src="dist/js/demo.js"></script>
 </body>
 </html>
-
-
-

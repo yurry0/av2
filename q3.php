@@ -69,7 +69,7 @@ e mostre o resultado.
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" name="form_media" method="POST" action="q2resp.php">
+              <form role="form" name="form_media" method="POST" action="q3resp.php">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="n1">Primeiro Algoritmo</label>

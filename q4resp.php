@@ -28,24 +28,16 @@
     //include "includes/navpar.php"
 
     ?>
-
-   
-  </nav>
   
+  </nav>
   <!-- /.navbar -->
 
   <!-- sidebar -->
-
     <?php
 
     include "includes/sidebar.php"
 
-
     ?>
-
-
-
-
 
   <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
@@ -74,24 +66,21 @@
               
               <?php
 
-            $valor1 = $_POST['sq1'];
-            $valor2 = $_POST['sq2'];
+            $qt_metro = $_POST['metro'];
+            $qt_segundo = $_POST['segundo'];
 
 
-            function calc_square($number1,$number2){
+            function calc_km($valor_metro,$valor_segundo){
 
-            $square1 = $number1 * $number1;
-            $square2 = $number2 * $number2;
+            $m_p_s = ($valor_metro / $valor_segundo);
 
-            $soma_square = $square1 + $square2;
-            
-            return $soma_square;
-            
+            $k_p_h = ($m_p_s * 3.6);
+
+            return $k_p_h;
           }
 
-            echo "<blockquote> <h1> A soma do dobro do valor ".$valor1." , e do dobro do valor ".$valor2." é: ".calc_square($valor1,$valor2);
-
-
+            echo "<blockquote> <h1> A velocidade em kilômetros por hora é: ".calc_km($qt_metro,$qt_segundo)." km/h";
+            
             ?>
 
               </div>
@@ -114,7 +103,6 @@
 
  ?>
 
-
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -122,9 +110,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
-
-
 
 
 <!-- jQuery -->
