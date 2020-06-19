@@ -79,7 +79,6 @@
                 function calc_salario($salario_original, $taxa_aumento,$aumento_next){
 
                   $salario_2016 = $salario_original + ($salario_original * $taxa_aumento)/100;
-                  echo $salario_2016;
                   $salario_2017 = $salario_2016 + ($salario_2016 * $aumento_next/100);
                   $salario_2018 = $salario_2017 + ($salario_2017 * ($aumento_next*2)/100);
                   $salario_2019 = $salario_2018 + ($salario_2018 * ($aumento_next*2*2)/100);
@@ -89,7 +88,7 @@
 
                 }
 
-                  echo "<p> Salário Atual: R$".calc_salario($salario_original,$taxa_aumento,$aumento_next)
+                  echo "<p> Salário Atual: </p>"."<h4> R$".calc_salario($salario_original,$taxa_aumento,$aumento_next)."</h4>";
 
 
 

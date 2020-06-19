@@ -71,7 +71,7 @@
               <form role="form" name="form_num" method="POST" action="q1resp.php">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="n1">Segundo Algoritmo</label>
+                    <label for="n1">Primeiro Algoritmo</label>
                     <input type="number" class="form-control" id="numero1" required name="numero1"placeholder="Digite aqui o primeiro algoritmo">
                   </div>
                   <div class="form-group">
