@@ -100,7 +100,7 @@ números pares.
 
                   <p> <?php
                   for($u = 0;$u<=9;$u++){ 
-                      echo $a[$u]." | ";
+                      echo $b[$u]." | ";
                     }
                   ?> </p>
                 </div>
